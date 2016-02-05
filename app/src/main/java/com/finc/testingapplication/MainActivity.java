@@ -7,9 +7,24 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    EditText num1;
-    EditText num2;
-    TextView resultView;
+    public void calculate(View v) {
+        String x = num1.getText().toString();
+        String y = num2.getText().toString();
+
+        resultView.setText(Adder.func(x, y));
+    }
+
+
+
+
+    /*
+     **********************************************************************
+     *
+     * Initial Setup. Ignore past this line
+     * 設定だけ！これ以下は気にしなくていい
+     *
+     **********************************************************************
+     */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +36,7 @@ public class MainActivity extends AppCompatActivity {
         resultView = (TextView) findViewById(R.id.result);
     }
 
-    public void calculate(View v) {
-        String x = num1.getText().toString();
-        String y = num2.getText().toString();
-
-        resultView.setText(Adder.func(x, y));
-    }
+    EditText num1;
+    EditText num2;
+    TextView resultView;
 }
