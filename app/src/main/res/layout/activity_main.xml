@@ -10,7 +10,9 @@
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="128dp"
         android:text="60"
         android:textSize="60sp"
         android:textStyle="bold" />
@@ -53,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:text="計算"
-        android:onClick="calculate"/>
+        android:onClick="calculate"
+        android:text="計算" />
 
 </RelativeLayout>
